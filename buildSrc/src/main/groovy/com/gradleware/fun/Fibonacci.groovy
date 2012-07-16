@@ -6,7 +6,7 @@ import org.gradle.api.Task
 import org.gradle.api.tasks.Input
 import org.gradle.api.tasks.TaskAction
 
-class Fibonacci extends DefaultTask {
+class Fibonacci extends DefaultTask { 
 	
 	@Input
 	int arg
