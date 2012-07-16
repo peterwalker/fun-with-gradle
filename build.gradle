@@ -1,0 +1,22 @@
+import com.gradleware.fun.Fibonacci
+def fibonacciResultTask = Fibonacci.wireUpFibonacciGraph(16,project)
+
+task printFibonacci {
+    dependsOn fibonacciResultTask
+    doLast{
+        println fibonacciResultTask.result
+    }
+}
+
+import com.gradleware.fun.Factorial
+def factorialResultTask = Factorial.wireUpFactorialGraph(16,project)
+
+task printFactorial {
+    dependsOn factorialResultTask
+    doLast{
+        println factorialResultTask.result
+    }
+}
+
+task all{}
+all.dependsOn printFibonacci,printFactorial
