@@ -1,0 +1,9 @@
+import com.gradleware.fun.Fibonacci
+def resultTask = Fibonacci.wireUpFibonacciGraph(46,project)
+
+task printFibonacci {
+	dependsOn resultTask
+	doLast{
+		println resultTask.result
+	}
+}
