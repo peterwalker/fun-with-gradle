@@ -16,7 +16,7 @@ class Factorial extends DefaultTask {
 	@TaskAction
 	def fib() {
 		if (arg<=1){
-            result=1
+            result=1 
 			return
 		}
 		result = arg * task1.result
