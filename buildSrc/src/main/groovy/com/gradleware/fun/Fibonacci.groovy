@@ -10,7 +10,7 @@ class Fibonacci extends DefaultTask {
 	
 	@Input
 	int arg
-	int result=-1
+	long result=-1
 	Task task1
 	Task task2
 	

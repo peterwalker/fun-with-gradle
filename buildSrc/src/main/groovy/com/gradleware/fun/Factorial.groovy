@@ -10,7 +10,7 @@ class Factorial extends DefaultTask {
 	
 	@Input
 	int arg
-	int result=-1
+	BigInteger result=-1
 	Task task1
 	
 	@TaskAction

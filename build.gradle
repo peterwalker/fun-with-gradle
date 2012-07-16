@@ -1,5 +1,5 @@
 import com.gradleware.fun.Fibonacci
-def fibonacciResultTask = Fibonacci.wireUpFibonacciGraph(16,project)
+def fibonacciResultTask = Fibonacci.wireUpFibonacciGraph(50,project)
 
 task printFibonacci {
     dependsOn fibonacciResultTask
@@ -9,7 +9,7 @@ task printFibonacci {
 }
 
 import com.gradleware.fun.Factorial
-def factorialResultTask = Factorial.wireUpFactorialGraph(16,project)
+def factorialResultTask = Factorial.wireUpFactorialGraph(50,project)
 
 task printFactorial {
     dependsOn factorialResultTask
